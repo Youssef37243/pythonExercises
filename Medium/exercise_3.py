@@ -9,6 +9,12 @@
 # Method: return_book() → sets is_checked_out = False
 # Method: str() → returns a string like: "1984 by George Orwell (Checked out: False)"
 
+# Create a Library class with:
+# Attribute: a list called collection to store books
+# Method: add_book(book) → adds to collection
+# Method: list_books() → prints all book titles and status
+# Method: find_book(title) → returns a matching book (case-insensitive)
+
 class Book:
     def __init__(self, title, author, year, is_checked_out = False):
         self.title = title
@@ -30,12 +36,6 @@ class Book:
     
     def string(self):
         return f'{self.title} by {self.author} (Checked out: {self.is_checked_out})'
-
-# Create a Library class with:
-# Attribute: a list called collection to store books
-# Method: add_book(book) → adds to collection
-# Method: list_books() → prints all book titles and status
-# Method: find_book(title) → returns a matching book (case-insensitive)
 
 class Library:
     def __init__(self):
